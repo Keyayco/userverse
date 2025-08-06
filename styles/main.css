@@ -1,0 +1,169 @@
+/* -------------------- BASE: Dark Theme -------------------- */
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #111;
+  color: #eee;
+  padding: 2rem;
+  margin: 0;
+  transition: all 0.4s ease;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #00ffcc;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+#post-feed {
+  display: grid;
+  gap: 2rem;
+}
+
+.post-preview {
+  border: 1px solid #333;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.post-preview:hover {
+  background-color: #1c1c1c;
+}
+
+.post-preview h2 {
+  color: #ffaa00;
+  margin-bottom: 0.5rem;
+}
+
+.post-preview p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.post-block {
+  margin-bottom: 2rem;
+  border-left: 4px solid #ffaa00;
+  padding-left: 1rem;
+}
+
+.post-block h2 {
+  color: #00ffcc;
+  margin-bottom: 0.5rem;
+}
+
+.post-block pre {
+  white-space: pre-wrap;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.post-thumb {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile-only logo */
+#userverse-logo {
+  display: none;
+  width: 60px;
+  height: auto;
+  margin: 0 auto 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#userverse-logo:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  #userverse-logo {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  #post-feed {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* -------------------- VAPORWAVE THEME -------------------- */
+body.vaporwave {
+  font-family: 'Press Start 2P', monospace;
+  background: linear-gradient(to right, #ff8ff6, #7ef9ff);
+  background-image: url('https://media1.tenor.com/m/kbAXHrIp5agAAAAC/vaporwave-aesthetic.gif');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #2d004d;
+}
+
+body.vaporwave header,
+body.vaporwave footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-top: 2px dashed #ff66cc;
+  border-bottom: 2px dashed #ff66cc;
+  padding: 1rem;
+}
+
+body.vaporwave h1,
+body.vaporwave h2,
+body.vaporwave h3 {
+  color: #9900cc;
+  text-shadow: 1px 1px 2px #ff8ff6;
+}
+
+body.vaporwave a {
+  color: #ff66cc;
+  text-decoration: underline wavy #2d004d;
+}
+
+body.vaporwave .post-preview {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid #ffccff;
+  box-shadow: 0 0 15px #ff66cc;
+}
+
+body.vaporwave .post-preview h2,
+body.vaporwave .post-preview p {
+  color: #2d004d;
+}
+
+body.vaporwave .post-block {
+  border-left: 4px solid #9900cc;
+}
+
+body.vaporwave .post-block h2 {
+  color: #ff66cc;
+}
+
+body.vaporwave .post-block pre {
+  color: #2d004d;
+}
+
+body.vaporwave #userverse-logo {
+  filter: hue-rotate(90deg);
+}
